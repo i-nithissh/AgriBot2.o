@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agribot Login</title>
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script type="module" src="loginjs.js" defer></script>
+</head>
+<body>
+    
+    <!-- <div class="transition-overlay"></div> -->
+    
+    <div class="container ">
+        <!-- Left Side - Login Box -->
+         
+        <div class="login-box">
+            <a href="new.html" class="back-button">
+                <i class="fas fa-home"></i> Home
+            </a>
+
+            <div class="logo">
+                <img src="images/agri-logo.png" alt="Agribot Logo">
+            </div>
+            <h2>Welcome to Agribot</h2>
+            <p>New here? <a href="register.html"> Register</a></p>
+            <form>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                
+                <label for="password">Password</label>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                    <span class="toggle-password">&#128065;</span>
+                </div>
+                <div>
+                    <p id="error-message" style="color: red; display: none;"></p>
+
+                </div>
+
+                <div class="remember">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+            
+                <button type="submit"  class="login-btn" id="submit">Login</button>
+                <!-- onclick="window.location.href='home.html';" -->
+               
+            </form>
+        </div>
+       
+
+
+        <!-- Right Side - Full-Page Image -->
+        <div class="image-container">
+            <img src="images/tree image.png" alt="Tree with Farmers" class="tree-image">
+        </div>
+    </div>
+    <!-- <script src="loginjs.js"></script> -->
+</body>
+</html>

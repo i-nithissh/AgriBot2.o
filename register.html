@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriBot Registration</title>
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script type="module" src="register.js" defer></script>
+</head>
+<div class="transition-overlay"></div>
+<body>
+   
+    
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+           
+        </div>
+    </header>
+    <a href="new.html" class="back-button">
+        <i class="fas fa-home"></i> Home
+    </a>
+    <!-- Registration Form Section -->
+    <div class="container">
+        <div class="form-container">
+            
+            <h1>Welcome !</h1>
+            <p>Already have an account? <a href="login.html">Log in</a></p>
+
+            <form>
+                <!-- <div class="container" id="signup" style="display: none;"></div> -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Name*</label>
+                        <input type="text" placeholder="Enter your name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label>Location*</label>
+                        <input type="text" placeholder="Enter your location" id="location">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Email*</label>
+                        <input type="email" placeholder="Enter your email" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Acre*</label>
+                        <input type="number" placeholder="Enter acres" id="acres" >
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Password*</label>
+                        <input type="password" placeholder="Enter password" id="password">
+                    </div>
+                    <div class="form-group">
+                        <label>Crop type</label>
+                        <input type="text" placeholder="Enter password" id="croptype">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Confirm Password*</label>
+                        <input type="password" placeholder="Confirm password" id="confirmpassword">
+                        <small id="passwordError" style="color: red; display: none;">Password does not match</small>
+                    </div>
+                    <div class="form-group">
+                        <label>Starting date</label>
+                        <input type="date" placeholder="Confirm password" id="stdate">
+                    </div>
+                </div>
+
+                <button id="submit" type="button" class="register-btn" >REGISTER</button>
+<!-- onclick="window.location.href='login.html';" -->
+
+            </form>
+        </div>
+
+        <!-- Right Side Illustration -->
+        <div class="illustration">
+            <img src="images/registeremoji.png" alt="Illustration">
+        </div>
+    </div>
+
+    <!-- <script src="register.js"></script> -->
+
+</body>
+</html>
